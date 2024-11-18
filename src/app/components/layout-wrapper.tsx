@@ -1,11 +1,11 @@
 // src/app/components/layout-wrapper.tsx
-import Image from 'next/image'
-import AnimatedBackground from './animated-background'
+import ThreeBackground from './three-background';
+import Image from 'next/image';
 
 export default function LayoutWrapper({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen relative overflow-hidden">
-      <AnimatedBackground />
+      <ThreeBackground />
       
       {/* Header */}
       <header className="relative z-10 p-4 flex justify-between items-center">
@@ -34,5 +34,5 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
         </div>
       </footer>
     </div>
-  )
+  );
 }
